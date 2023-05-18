@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cipher Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+        }
+	h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #444;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+	h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button[type="submit"] {
+            display: block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 24px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        button[type="submit"]:hover {
+            background-color: #5cbf62;
+        }
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+	<h1> CipherShift </h1>
+        <h2>Select a Cipher Type</h2>
+        <form method="post">
+            <label><input type="radio" name="cipher_type" value="caesar"> Caesar Cipher</label>
+            <label><input type="radio" name="cipher_type" value="atBash"> AtBash Cipher</label>
+	    <label><input type="radio" name="cipher_type" value="vigenere"> Vigenere Cipher</label>
+            <label><input type="radio" name="cipher_type" value="beaufort"> Beaufort Cipher</label>
+	    <label><input type="radio" name="cipher_type" value="railFence"> Rail Fence Cipher</label>
+            <label><input type="radio" name="cipher_type" value="gronsfeld"> Gronsfeld Cipher</label>
+            <button type="submit">Submit</button>
+        </form>
+        <p>This page allows you to select a type of cipher for encoding or decoding messages. Simply select the cipher type and click the Submit button.</p>
+    </div>
+</body>
+</html>
+
